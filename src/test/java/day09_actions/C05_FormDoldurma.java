@@ -7,7 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 public class C05_FormDoldurma extends TestBase {
@@ -57,7 +58,7 @@ public class C05_FormDoldurma extends TestBase {
         signupButonu.click();
         // Kayit olamadiginizi test edin
 
-        ReusableMethod.bekle(20);
+        ReusableMethods.bekle(20);
         WebElement hataMesajElementi= driver.findElement(By.id("reg_error_inner"));
 
         Assert.assertTrue(hataMesajElementi.isDisplayed());

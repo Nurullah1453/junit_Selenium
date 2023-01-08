@@ -2,7 +2,7 @@ package day08_HandlingWindows;
 
 import org.junit.Assert;
 import org.junit.Test;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 public class C04_TestBaseIlkTest extends TestBase {
@@ -20,6 +20,6 @@ public class C04_TestBaseIlkTest extends TestBase {
 
         Assert.assertTrue(actualUrl.contains(expectedKelime));
 
-        ReusableMethod.bekle(3);
+        ReusableMethods.bekle(3);
     }
 }

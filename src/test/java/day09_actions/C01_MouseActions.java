@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 import java.util.Set;
@@ -26,14 +26,14 @@ public class C01_MouseActions extends TestBase {
         //1- Yeni bir class olusturalim: MouseActions1
         driver.navigate().to("https://the-internet.herokuapp.com/context_menu");
 
-        ReusableMethod.bekle(3);
+        ReusableMethods.bekle(3);
 
         //Cizili alan uzerinde sag click yapin
         Actions action=new Actions(driver);
         WebElement ciziliAlan=driver.findElement(By.id("hot-spot"));
         action.contextClick(ciziliAlan).perform();
 
-        ReusableMethod.bekle(3);
+        ReusableMethods.bekle(3);
 
 
         // 4- Alert’te cikan yazinin “You selected a context menu” oldugunu test edin.

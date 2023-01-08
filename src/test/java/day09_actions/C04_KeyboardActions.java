@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 public class C04_KeyboardActions extends TestBase {
@@ -41,7 +41,7 @@ public class C04_KeyboardActions extends TestBase {
                 .sendKeys("71")
                 .sendKeys(Keys.ENTER)
                 .perform();
-        ReusableMethod.bekle(3);
+        ReusableMethods.bekle(3);
         //4- aramanin gerceklestigini test edin
 
         WebElement sonucYaziElementi= driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));

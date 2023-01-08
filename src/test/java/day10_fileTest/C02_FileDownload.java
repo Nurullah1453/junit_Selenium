@@ -3,7 +3,7 @@ package day10_fileTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 import java.nio.file.Files;
@@ -26,7 +26,7 @@ public class C02_FileDownload extends TestBase {
         //2-luminoslogo.png dosasını indirelim
         driver.findElement(By.xpath("//a[text()='luminoslogo.png']")).click();
 
-        ReusableMethod.bekle(5);
+        ReusableMethods.bekle(5);
 
         //3-Dosyanın başarıyla indirilip indirilmediğini test edelim
 
